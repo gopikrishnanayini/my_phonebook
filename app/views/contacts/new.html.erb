@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+    <%= stylesheet_link_tag "keyboard.min.css","keyboard-basic.min.css","keyboard-dark.min.css","keyboard-previewkeyset.min.css" %>
+  </head>
+  <body>
+    <br/>
+    <div class="container">
+      <div class="row">
+				<h1>New Contact</h1>
+
+				<%= render 'form', contact: @contact %>
+        </br>
+				<%= link_to 'Back', contacts_path,remote: true, :class=>'btn btn-primary' %>
+			</div>
+		</div>
+	</body>
+</html>
